@@ -938,6 +938,7 @@ img {
 
 .checkbox-form {
   display: flex;
+  justify-content: center;
   gap: 7px;
   margin-bottom: 30px;
 }
