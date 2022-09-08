@@ -14,7 +14,7 @@
   --secondary-text-clr: #757575;
   --grey-clr-60: rgba(255, 255, 255, 0.6);
   --icon-color: #afb1b8;
-  --total-black: #000000;
+  --close-icon-clr: #000000;
 
   /* Fonts */
   --main-font: Roboto, sans-serif;
@@ -263,7 +263,7 @@ img {
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--brand-clr);
-  background-color: var(--special-bg);
+  background-color: var(--main-bg);
 }
 
 /**
@@ -835,7 +835,7 @@ img {
   border-radius: 50%;
   background-color: var(--main-bg);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  fill: var(--total-black);
+  fill: var(--close-icon-clr);
 
   transition: fill var(--duration) var(--tran-tim-fun),
     background-color var(--duration) var(--tran-tim-fun);
@@ -843,6 +843,5 @@ img {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  fill: var(--main-bg);
-  background-color: var(--brand-clr);
+  fill: var(--brand-clr);
 }
