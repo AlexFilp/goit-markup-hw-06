@@ -39,6 +39,7 @@
 
   --header-border: 1px solid #ececec;
   --portfolio-border: 1px solid #eeeeee;
+  --footer-form-border: 1px solid rgba(255, 255, 255, 0.3);
 
   /* Animations */
 
@@ -507,7 +508,6 @@ img {
 }
 
 .social-link-text {
-  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-bg);
@@ -515,13 +515,18 @@ img {
 
 .footer-group {
   display: flex;
-  gap: 70px;
   align-items: baseline;
+}
+
+.footer-logo-address-group {
+  width: 231px;
+  margin-right: 70px;
 }
 
 .footer-social-links {
   width: 206px;
   height: 80px;
+  margin-right: 93px;
 }
 
 .social-link-group {
@@ -547,6 +552,76 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--brand-clr);
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  gap: 12px;
+}
+
+.form-group input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--grey-clr-60);
+  background-color: transparent;
+  border: var(--footer-form-border);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border-color var(--duration) var(--tran-tim-fun);
+}
+
+.form-group input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--grey-clr-60);
+}
+
+.form-group input:hover,
+.form-group input:focus {
+  border-color: var(--brand-clr);
+}
+
+.form-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--brand-clr);
+  box-shadow: 0px 4px 4px var(--hero-btn-shadow);
+  border: none;
+  border-radius: 4px;
+  color: var(--main-bg);
+  fill: currentColor;
+  cursor: pointer;
+
+  transition: color var(--duration) var(--tran-tim-fun),
+    background-color var(--duration) var(--tran-tim-fun);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: var(--main-bg);
+  color: var(--brand-clr);
 }
 
 /**
