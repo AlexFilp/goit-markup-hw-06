@@ -582,6 +582,16 @@ img {
   transition: border-color var(--duration) var(--tran-tim-fun);
 }
 
+.footer-label {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+
+  color: var(--main-bg);
+}
+
 .footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -589,8 +599,7 @@ img {
   color: var(--grey-clr-60);
 }
 
-.footer-input:hover,
-.footer-input:focus {
+.footer-input:focus-within {
   border-color: var(--brand-clr);
 }
 
@@ -892,8 +901,7 @@ img {
   transition: border-color var(--duration) var(--tran-tim-fun);
 }
 
-.modal-form-input:hover,
-.modal-form-input:focus {
+.modal-form-input:focus-within {
   border-color: var(--brand-clr);
 }
 
@@ -916,8 +924,7 @@ img {
   transition: border-color var(--duration) var(--tran-tim-fun);
 }
 
-.modal-comment:hover,
-.modal-comment:focus {
+.modal-comment:focus-within {
   border-color: var(--brand-clr);
 }
 
