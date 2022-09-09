@@ -946,14 +946,26 @@ img {
   color: var(--modal-comment-clr);
 }
 
-.checkbox-form {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 30px;
+.modal-policy-icon {
+  border: 2px solid var(--main-text-clr);
+  border-radius: 2px;
+
+  transition: background-color var(--duration) var(--tran-tim-fun),
+    border-color var(--duration) var(--tran-tim-fun);
+}
+
+.policy-checkbox-input:checked + .modal-policy-icon {
+  border-color: transparent;
+  background-color: var(--brand-clr);
 }
 
 .policy-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: 1.71;
 
