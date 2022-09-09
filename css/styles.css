@@ -901,8 +901,26 @@ img {
   transition: border-color var(--duration) var(--tran-tim-fun);
 }
 
+.modal-input-field {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: var(--main-text-clr);
+
+  transition: fill var(--duration) var(--tran-tim-fun);
+}
+
 .modal-form-input:focus-within {
   border-color: var(--brand-clr);
+}
+
+.modal-form-input:focus-within + .modal-icon {
+  fill: var(--brand-clr);
 }
 
 .comment-form {
