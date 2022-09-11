@@ -38,16 +38,13 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   /* Borders */
-
   --header-border: 1px solid #ececec;
   --portfolio-border: 1px solid #eeeeee;
   --footer-form-border: 1px solid rgba(255, 255, 255, 0.3);
   --modal-form-border: 1px solid rgba(33, 33, 33, 0.2);
 
   /* Animations */
-
-  --tran-tim-fun: cubic-bezier(0.4, 0, 0.2, 1);
-  --duration: 250ms;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Global styles */
@@ -163,7 +160,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color var(--duration) var(--tran-tim-fun);
+  transition: color var(--animation);
 }
 
 .contact-list {
@@ -258,8 +255,7 @@ img {
   border: none;
   cursor: pointer;
 
-  transition: color var(--duration) var(--tran-tim-fun),
-    background-color var(--duration) var(--tran-tim-fun);
+  transition: color var(--animation), background-color var(--animation);
 }
 
 .hero-btn:hover,
@@ -423,8 +419,7 @@ img {
   color: var(--icon-color);
   fill: currentColor;
 
-  transition: color var(--duration) var(--tran-tim-fun),
-    background-color var(--duration) var(--tran-tim-fun);
+  transition: color var(--animation), background-color var(--animation);
 }
 
 .team-icon-link:hover,
@@ -455,8 +450,7 @@ img {
   color: var(--icon-color);
   fill: currentColor;
 
-  transition: color var(--duration) var(--tran-tim-fun),
-    border-color var(--duration) var(--tran-tim-fun);
+  transition: color var(--animation), border-color var(--animation);
 }
 
 .clients-link:hover,
@@ -497,7 +491,7 @@ img {
   line-height: 1.71;
   color: var(--main-bg);
 
-  transition: color var(--duration) var(--tran-tim-fun);
+  transition: color var(--animation);
 }
 
 .footer-link:hover,
@@ -548,7 +542,7 @@ img {
   background-color: var(--icon-bg-clr);
   fill: currentColor;
 
-  transition: background-color var(--duration) var(--tran-tim-fun);
+  transition: background-color var(--animation);
 }
 
 .social-link:hover,
@@ -579,7 +573,7 @@ img {
   border-radius: 4px;
   outline: none;
 
-  transition: border-color var(--duration) var(--tran-tim-fun);
+  transition: border-color var(--animation);
 }
 
 .footer-label {
@@ -624,8 +618,7 @@ img {
   fill: currentColor;
   cursor: pointer;
 
-  transition: color var(--duration) var(--tran-tim-fun),
-    background-color var(--duration) var(--tran-tim-fun);
+  transition: color var(--animation), background-color var(--animation);
 }
 
 .form-btn:hover,
@@ -667,9 +660,8 @@ img {
   border: none;
   cursor: pointer;
 
-  transition: color var(--duration) var(--tran-tim-fun),
-    background-color var(--duration) var(--tran-tim-fun),
-    box-shadow var(--duration) var(--tran-tim-fun);
+  transition: color var(--animation), background-color var(--animation),
+    box-shadow var(--animation);
 }
 
 .portfolio-btn:hover,
@@ -697,7 +689,7 @@ img {
 .portfolio-item {
   width: 370px;
 
-  transition: box-shadow var(--duration) var(--tran-tim-fun);
+  transition: box-shadow var(--animation);
 }
 
 /* Вариант отступов через маржины */
@@ -758,7 +750,7 @@ img {
   background-color: var(--prtfl-bg-clr);
 
   transform: translateY(101%);
-  transition: transform var(--duration) var(--tran-tim-fun);
+  transition: transform var(--animation);
 }
 
 .portfolio-overlay-desc {
@@ -799,8 +791,7 @@ img {
   background-color: var(--backdrop-bg-clr);
 
   opacity: 1;
-  transition: opacity var(--duration) var(--tran-tim-fun),
-    visibility var(--duration) var(--tran-tim-fun);
+  transition: opacity var(--animation), visibility var(--animation);
 }
 
 .backdrop.is-hidden {
@@ -827,7 +818,7 @@ img {
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--duration) var(--tran-tim-fun);
+  transition: transform var(--animation);
 }
 
 .modal-btn {
@@ -848,8 +839,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: var(--close-icon-clr);
 
-  transition: fill var(--duration) var(--tran-tim-fun),
-    background-color var(--duration) var(--tran-tim-fun);
+  transition: fill var(--animation), background-color var(--animation);
 }
 
 .modal-btn:hover,
@@ -898,7 +888,7 @@ img {
   border-radius: 4px;
   outline: none;
 
-  transition: border-color var(--duration) var(--tran-tim-fun);
+  transition: border-color var(--animation);
 }
 
 .modal-icon {
@@ -908,7 +898,7 @@ img {
   transform: translateY(-50%);
   fill: var(--main-text-clr);
 
-  transition: fill var(--duration) var(--tran-tim-fun);
+  transition: fill var(--animation);
 }
 
 .modal-form-input:focus-within {
@@ -931,7 +921,7 @@ img {
   border-radius: 4px;
   outline: none;
 
-  transition: border-color var(--duration) var(--tran-tim-fun);
+  transition: border-color var(--animation);
 }
 
 .modal-input-comment:focus-within {
@@ -950,8 +940,7 @@ img {
   border: 2px solid var(--main-text-clr);
   border-radius: 2px;
 
-  transition: background-color var(--duration) var(--tran-tim-fun),
-    border-color var(--duration) var(--tran-tim-fun);
+  transition: background-color var(--animation), border-color var(--animation);
 }
 
 .policy-checkbox-input:checked + .modal-policy-icon {
@@ -994,7 +983,7 @@ img {
   border: none;
   cursor: pointer;
 
-  transition: background-color var(--duration) var(--tran-tim-fun);
+  transition: background-color var(--animation);
 }
 
 .modal-form-btn:hover,
