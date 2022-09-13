@@ -504,6 +504,8 @@ img {
 }
 
 .social-link-text {
+  display: block;
+  margin-bottom: 20px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-bg);
@@ -527,7 +529,6 @@ img {
 
 .social-link-group {
   display: flex;
-  margin-top: 20px;
   gap: 10px;
 }
 
@@ -854,12 +855,14 @@ img {
 */
 
 .modal-title {
+  display: block;
+  margin-bottom: 12px;
+
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  margin-bottom: 12px;
 
-  color: #212121;
+  color: var(--main-text-clr);
 }
 
 .modal-form-label {
